@@ -124,3 +124,24 @@ html.lenis body {
 .lenis.lenis-smooth iframe {
   pointer-events: none;
 }
+
+
+.track {
+  overflow: hidden;
+}
+
+.content {
+  overflow: hidden;
+  padding: 0 8px;
+  will-change: transform;
+  animation: marquee 5s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
