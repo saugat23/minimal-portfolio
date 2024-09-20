@@ -47,11 +47,10 @@ jobs:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
 
-      - name: Setup pnpm
+      - name: Install pnpm
         if: steps.detect-package-manager.outputs.manager == 'pnpm'
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
+        run: |
+          npm install -g pnpm
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
