@@ -15,15 +15,15 @@ export default function Page() {
           <div className="font-medium">Developer _____</div>
           <ul className="hidden lg:flex items-center space-x-8 font-medium text-text">
             <li>
-              <Link href="#projects" scroll={false}>
+              <Link href="#projects">
                 Projects
               </Link>
             </li>
             <li>
-              <Link href="#about" scroll={false}>About</Link>
+              <Link href="#about">About</Link>
             </li>
             <li>
-              <Link href="#contacts" scroll={false}>Contacts</Link>
+              <Link href="#contacts">Contacts</Link>
             </li>
           </ul>
         </nav>
