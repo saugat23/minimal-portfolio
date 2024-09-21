@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable}`}
+        className={`${inter.variable} scroll-smooth`}
       >
         <SmoothScrolling>{children}</SmoothScrolling>
       </body>
