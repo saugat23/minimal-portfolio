@@ -1,14 +1,16 @@
-"use client";
+'use client'
 
-import React from "react";
-import Container from "./Container";
+import React from 'react'
+import Container from './Container'
 
 export default function Page() {
   return (
     <>
       <Container className="border-b border-b-borderColor px-4 lg:px-8">
         <div className="py-16 lg:py-20 flex flex-col justify-center space-y-2 font-normal text-text">
-          <h3 className="text-text font-bold xl:text-5xl lg:text-4xl text-3xl">Process</h3>
+          <h3 className="text-text font-bold xl:text-5xl lg:text-4xl text-3xl">
+            Process
+          </h3>
           <div className="mt-12 w-full flex justify-between items-center">
             <div className="hidden lg:block lg:w-2/5 bg-transparent"></div>
             <ul className="w-full lg:w-3/5 flex flex-col justify-start space-y-4">
@@ -42,5 +44,5 @@ export default function Page() {
         </div>
       </Container>
     </>
-  );
+  )
 }
